@@ -281,12 +281,12 @@ float ACCEL_Z_MAX = 422;
 
 // Magnetometer (standard calibration mode)
 // "magn x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
-float MAGN_X_MIN = -600;
-float MAGN_X_MAX = 600;
-float MAGN_Y_MIN = -600;
-float MAGN_Y_MAX = 600;
-float MAGN_Z_MIN = -600;
-float MAGN_Z_MAX = 600;
+float MAGN_X_MIN = -1537;
+float MAGN_X_MAX = 1832;
+float MAGN_Y_MIN = -1791;
+float MAGN_Y_MAX = 1627;
+float MAGN_Z_MIN = -1461;
+float MAGN_Z_MAX = 1665;
 
 // Magnetometer (extended calibration mode)
 // Set to true to use extended magnetometer calibration (compensates hard & soft iron errors)
@@ -496,7 +496,7 @@ float G_Dt = 0; // Integration time for DCM algorithm
 // More output-state variables
 boolean output_stream_on = false;
 boolean output_single_on = false;
-int curr_calibration_sensor = 1;//XXXXXXXXXXXXXXX
+int curr_calibration_sensor = 0;//XXXXXXXXXXXXXXX
 boolean reset_calibration_session_flag = true;
 int num_accel_errors = 0;
 int num_magn_errors = 0;

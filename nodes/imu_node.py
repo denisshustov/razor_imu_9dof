@@ -166,11 +166,17 @@ ser.write('#ox' + chr(13)) # To start display angle and sensor reading in text
 rospy.loginfo("Writing calibration values to razor IMU board...")
 #set calibration values
 ser.write('#caxm' + str(accel_x_min) + chr(13))
+rospy.loginfo("1")
 ser.write('#caxM' + str(accel_x_max) + chr(13))
+rospy.loginfo("2")
 ser.write('#caym' + str(accel_y_min) + chr(13))
+rospy.loginfo("3")
 ser.write('#cayM' + str(accel_y_max) + chr(13))
+rospy.loginfo("4")
 ser.write('#cazm' + str(accel_z_min) + chr(13))
+rospy.loginfo("5")
 ser.write('#cazM' + str(accel_z_max) + chr(13))
+rospy.loginfo("6")
 
 if (not calibration_magn_use_extended):
     ser.write('#cmxm' + str(magn_x_min) + chr(13))
